@@ -1,0 +1,1 @@
+{"id":"c4d33297","timestamp":1772840862,"model":"gpt-4o-mini","prompt":"Write a haiku about C++.","response":"Pointers dance free\nMemory leaks everywhere\nValgrind weeps now","input_tokens":12,"output_tokens":14,"cost_usd":0.00000400,"latency_ms":104.949,"success":true,"error":"","metadata":{"session":"abc123","user":"demo"}}
