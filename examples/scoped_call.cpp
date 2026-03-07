@@ -1,31 +1,25 @@
 #define LLM_LOG_IMPLEMENTATION
 #include "llm_log.hpp"
-#include <chrono>
 #include <iostream>
 #include <thread>
+#include <chrono>
+#include <stdexcept>
+#include <cstdio>
 
 int main() {
-    llm::LogConfig cfg;
-    cfg.filepath    = "scoped_test.jsonl";
-    cfg.also_stdout = true;
-
+    llm::LogConfig cfg; cfg.filepath="scoped.jsonl"; cfg.also_stdout=true;
     llm::Logger logger(cfg);
-
-    std::cout << "Making mock LLM call (ScopedCall RAII)...\n\n";
+    std::cout << "--- ScopedCall example ---\n\n";
     {
-        llm::Logger::ScopedCall call(logger, "gpt-4o-mini",
-            "Write a haiku about C++.",
-            {{"user", "demo"}, {"session", "abc123"}});
-
-        // Simulate LLM work
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-        call.set_response("Pointers dance free\nMemory leaks everywhere\nValgrind weeps now");
-        call.set_tokens(12, 14);
-        call.set_cost(0.000004);
-        // Destructor fires here, logs the completed entry automatically
+        llm::Logger::ScopedCall call(logger, "gpt-4o-mini", "What is 2+2?", {{"user","u123"}});
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        call.set_response("4"); call.set_tokens(10,5); call.set_cost(0.000008);
     }
-
-    std::cout << "\nCall logged automatically by RAII destructor.\n";
+    {
+        llm::Logger::ScopedCall call(logger, "gpt-4o-mini", "Translate hello.");
+        try { throw std::runtime_error("timeout"); } catch (const std::exception& ex) { call.set_error(ex.what()); }
+    }
+    std::cout << "\nCheck scoped.jsonl for output.\n";
+    std::remove("scoped.jsonl");
     return 0;
 }
