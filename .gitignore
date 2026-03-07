@@ -11,3 +11,4 @@ Makefile
 *.jsonl
 build_check/
 build/
+build*/
