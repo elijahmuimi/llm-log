@@ -11,7 +11,8 @@ int main() {
         llm::LogEntry e; e.model=models[i%2]; e.prompt="Prompt "+std::to_string(i);
         e.response="Resp "+std::to_string(i); e.input_tokens=20+i; e.output_tokens=10+i;
         e.cost_usd=0.00001*(i+1); e.latency_ms=100.0+i*10; e.success=(i%7!=0);
-        if(!e.success) e.error="simulated error"; logger.log(e);
+        if(!e.success) e.error="simulated error";
+        logger.log(e);
     }
     llm::Logger::QueryOptions opts; opts.model_filter="gpt-4o-mini"; opts.success_only=true; opts.limit=5;
     auto res=logger.query(opts);
